@@ -1,24 +1,23 @@
 /* Color Palette & Fonts */
 :root {
-    --primary-bg-color: #f8f9fa; /* Light background */
-    --secondary-bg-color: #e9ecef; /* Slightly darker background for sections */
-    --accent-color: #6c757d; /* Muted primary text/border color */
-    --dark-text: #343a40; /* Darker text for headings */
-    --light-text: #495057; /* General body text */
-    --card-bg: #ffffff; /* Card background */
-    --button-primary: #007bff; /* Blue button */
-    --button-primary-hover: #0056b3; /* Darker blue on hover */
-    --button-secondary: #6c757d; /* Gray back button */
-    --button-secondary-hover: #5a6268; /* Darker gray on hover */
-    --star-gold: #ffc107; /* Gold for active stars */
-    --star-gray: #e0e0e0; /* Lighter gray for inactive stars */
-    --border-color: #dee2e6; /* Light border color */
+    --primary-bg-color: #f8f9fa;
+    --secondary-bg-color: #e9ecef; 
+    --accent-color: #6c757d; 
+    --dark-text: #343a40; 
+    --light-text: #495057; 
+    --card-bg: #ffffff; 
+    --button-primary: #007bff; 
+    --button-primary-hover: #0056b3; 
+    --button-secondary: #6c757d;
+    --button-secondary-hover: 
+    --star-gold: #ffc107; 
+    --star-gray: #e0e0e0; 
+    --border-color: #dee2e6;
 
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Open Sans', sans-serif;
 }
 
-/* Global Styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -387,4 +386,5 @@ section {
 
 .card {
     animation: fadeIn 0.5s ease-out;
+
 }
