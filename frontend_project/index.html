@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CritiqueCorner: Your Hub for Movies & Books</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <h1>CritiqueCorner</h1>
+        <p class="tagline">Your Hub for Movies & Books</p>
+    </header>
+
+    <div id="home-section" class="visible">
+        <h2>Discover Your Next Favorite Story.</h2>
+        <p>Dive into our handpicked selection of recent movies and books. Share your honest ratings and reviews, or find out what others are saying!</p>
+        <div class="button-container">
+            <button id="show-movies-btn" class="main-btn">Explore Movies</button>
+            <button id="show-books-btn" class="main-btn">Explore Books</button>
+        </div>
+    </div>
+
+    <section id="movies-section" class="hidden">
+        <div class="section-header">
+            <h2>Latest Movies</h2>
+            <button id="back-to-home-btn-movies" class="back-btn"><i class="fas fa-arrow-left"></i> Go Back</button>
+        </div>
+        <div id="movies-grid" class="content-grid"></div>
+    </section>
+
+    <section id="books-section" class="hidden">
+        <div class="section-header">
+            <h2>Must-Read Books</h2>
+            <button id="back-to-home-btn-books" class="back-btn"><i class="fas fa-arrow-left"></i> Go Back</button>
+        </div>
+        <div id="books-grid" class="content-grid"></div>
+    </section>
+
+    <template id="card-template">
+        <div class="card">
+            <img class="card-image" src="" alt="Cover Image">
+            <div class="card-details">
+                <h3 class="card-title"></h3>
+                <p class="card-genre-year"></p>
+                <p class="card-description"></p>
+                <div class="rating-section">
+                    <p class="rating-label">Your Rating:</p>
+                    <div class="stars" data-rating="0">
+                        <i class="far fa-star" data-value="1"></i>
+                        <i class="far fa-star" data-value="2"></i>
+                        <i class="far fa-star" data-value="3"></i>
+                        <i class="far fa-star" data-value="4"></i>
+                        <i class="far fa-star" data-value="5"></i>
+                    </div>
+                </div>
+                <div class="review-section">
+                    <p class="review-label">Your Review:</p>
+                    <textarea class="review-box" placeholder="Write your thoughts..."></textarea>
+                    <button class="submit-review">Submit Review</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
